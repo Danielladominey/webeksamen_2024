@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <form id="search">
+                <input type="search" id="sok" placeholder="Søk">
+                <button id="sokeknapp">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+             <!-- SIDENS NAVIGASJON -->
+                <article class="navi">
+                    <a href="index.html">Hjem</a>
+                    <a href="index.html#del2-1">Produkter</a>
+                    <a href="index.html"><h1 id="logo">Logo</h1></a>
+                    <a href="index.html#del3-1">Kategorier</a>
+                    <a href="#kontakt">Kontakt</a>
+              </article>
+
+             <!--BRUKER, LIKTE VARER OG HANDLEKURV -->
+                <article id="navicons">
+                    <a href><i class="fa-regular fa-user" style="color: black;"></i></a>
+                    <a href=""><i class="fa-regular fa-heart" style="color: black;"></i></a>
+                    <a href="checkout.html"><i class="fa-solid fa-cart-shopping" style="color: black;"></i></a>
+                </article>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Fortsett å handle</h3>
+
+        <!-- SEKSJON 1 SHOPPINGBAG -->
+        <section id="del1-checkout">
+            <h1>Kasse</h1>
+
+            <!-- En section innenfor SEKSJON 1, som inneholder articles med bilder og produktinfo, samt størrelsevalg og mengdevalg-->
+            <section id="del1-2-checkout">
+
+
+                <h2>1. SHOPPINGBAGEN DIN</h2>
+
+
+                <section class="del-2-checkoutsection">
+                    <article class="bildecontainer3">
+                        <a href="product.html">
+                            <img src="img/produkt12.jpg" class="bildecheckout" alt="produkt">
+                        </a>
+                    </article>
+
+                    <article class="articleinfocheckout">
+                        <h3>PRODUCT NAME</h3>
+                        <p>Kr 1999</p>
+                        <p>Farge: beige</p>
+                    </article>
+
+                    <article class="formscheckout">
+                        <form action="#" method="GET" class="formcheck">
+                            <label class="label1">Størrelse</label>
+                            <select class="storrelse">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>   
+                        </form>
+
+                        <form action="#" method="GET" class="mengde">
+                            <label class="label1">Antall</label>
+                            <input type="number" class="mengde2" value="1" min="1">
+                        </form>
+                    </article>
+                </section>
+
+                <section class="del-2-checkoutsection">
+                    <article class="bildecontainer3">
+                        <a href="product.html">
+                            <img src="img/produkt12.jpg" class="bildecheckout" alt="produkt">
+                        </a>
+                    </article>
+                    <article class="articleinfocheckout">
+                        <h3>PRODUCT NAME</h3>
+                        <p>Kr 1999</p>
+                        <p>Farge: beige</p>
+                    </article>
+
+                    <article class="formscheckout">
+                        <form action="#" method="GET" class="formcheck">
+                            <label class="label1">Størrelse</label>
+                            <select class="storrelse1">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>   
+                        </form>
+
+                        <form action="#" method="GET" class="mengde">
+                            <label class="label1">Antall</label>
+                            <input type="number" class="mengde2" value="1" min="1">
+                        </form>
+                    </article>
+                </section>
+
+                <section class="del-2-checkoutsection">
+                    <article class="bildecontainer3">
+                        <a href="product.html">
+                            <img src="img/produkt12.jpg" class="bildecheckout" alt="produkt">
+                        </a>
+                    </article>
+                    <article class="articleinfocheckout">
+                        <h3>PRODUCT NAME</h3>
+                        <p>Kr 1999</p>
+                        <p>Farge: beige</p>
+                    </article>
+
+                    <article class="formscheckout">
+                        <form action="#" method="GET" class="formcheck">
+                            <label class="label1">Størrelse</label>
+                            <select class="storrelse1">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>   
+                        </form>
+
+                        <form action="#" method="GET" class="mengde">
+                            <label class="label1">Antall</label>
+                            <input type="number" class="mengde2" value="1" min="1">
+                        </form>
+                    </article>
+                </section>
+            </section>
+            </section>
+            
+        
+
+
+
+
+            <!-- SEKSJON 2 PERSONOPPLYSNINGER -->
+            <section id="del3-checkout">
+                <h2>2. DINE OPPLYSNINGER</h2>
+                <h3>Leveringsadresse</h3>
+
+                <!-- Inneholder sections med articles med form inputs og labels -->
+                <section class="opplysningercontainer"> 
+                    <form action="#" method="GET" class="opplysninger">
+                        
+                        <article id="fornavn">
+                            <label class="label3">Fornavn</label>
+                            <input type="text" class="opplysninger2" placeholder="Nora*">
+                        </article>
+                        
+                    <article id="etternavn">
+                            <label class="label3">Etternavn</label>
+                            <input type="text"  class="opplysninger2" placeholder="Nordmann*">
+                    </article>     
+                    
+                        
+                        <article id="gateadresse">
+                            <label class="label3">Gateadresse</label>
+                            <input type="text" class="opplysninger2" placeholder="BRA veien 4*">    
+                        </article>
+                    
+                    <article id="postnummer">
+                            <label class="label3">Postnummer</label>
+                            <input type="number"  class="opplysninger2" placeholder="1752*">
+                    </article>
+                        
+                    <article id="poststed">
+                            <label class="label3">Poststed</label>
+                            <input type="text"  class="opplysninger2" placeholder="Halden*">
+                    </article>     
+                    </form>
+
+                    <h3>Kontaktinformasjon</h3>
+                    <form action="#" method="GET" class="opplysninger">
+                        <article id="kontaktinfoform">
+                            <label class="label3">Epost-adresse</label>
+                            <input type="email" class="opplysninger2" placeholder="noran@hotmail.com">
+                            <label class="label3">Telefonnummer</label>
+                            <input type="tel" class="opplysninger2" placeholder="455 13 152">
+                        </article> 
+                    </form>
+
+
+                    <!-- Lagre knapp -->
+                     <article class="buttonflex">
+                        <button class="opplysninger4">Lagre</button>
+                        <a href="#" id="Avbryt">Avbryt</a>
+                     </article>
+                    <!-- Avbryt lenke -->
+                </section>
+            </section>
+
+
+
+            <!-- SEKSJON 3 LEVERING, inneholder articles med radiobutton og leveringsinnhold -->
+            <section id="del4-checkout">
+                <h2>3. LEVERING </h2>
+                <h3>Leveringsvalg</h3>
+
+                <article class="radiobuttons">
+                    <input type="radio" name="radiobutton">
+                    <label>Express Hjemlevering</label>
+                    <p class="leveringtid">3-4 arbeidsdager</p>
+                    <p>59 kr</p>
+                    <p>Bestill hver dag før 08.00 for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+                </article>
+
+                <article class="radiobuttons">
+                    <input type="radio" name="radiobutton">
+                    <label>Express pakke til utleveringssted</label>
+                    <p class="leveringtid">1-3 virkedager</p>
+                    <p>59 kr</p>
+                </article>
+
+                <article class="radiobuttons">
+                    <input type="radio" name="radiobutton">
+                    <label>Standard Hjemlevering</label>
+                    <p class="leveringtid">5-8 virkedager</p>
+                    <p>Gratis</p>
+                    <p>Leveres hjem til deg mandag til lørdag innen 4-7 virkedager</p>
+                </article>
+            </section>
+
+
+
+
+            <!-- SEKSJON 4 BETALING, inneholder først et form med articles med input og labels, deretter en egen section med sum,knapp og checkboxer-->
+            <section id="del5-checkout">
+                <section id="del5-2">
+                    <h2>4. BETALING </h2>
+                    <h3>Betal med kort</h3>
+        
+                    <form action="#" method="GET" id="formcheckout2">
+                        <article id="kortnummer">
+                            <label class="label3">Kortnummer</label>
+                            <input type="number" class="opplysninger2" placeholder="342342****4435">
+                        </article>
+                        
+                        <article id="fodselsdato">
+                            <label class="label3">Fødselsdato</label>
+                            <input type="date" class="opplysninger2">
+                        </article>
+
+                        <article id="CVC"> 
+                            <label class="label3">CVC/CVV</label>
+                            <input type="number" class="opplysninger2" placeholder="CVC/CVV">
+                        </article>   
+                    </form>
+                    
+                </section>
+
+                <section id="del5-3">
+                    <p class="bold">Å betale inkl.mva.</p>
+                    <p class="bold">1 999</p>
+                    <article class="buttonflex">
+                        <button class="opplysninger4">Fullfør kjøp</button>
+                    </article>
+                    <p class="ikkebold">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Levrandøren forbeholder seg til retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendie opplysninger.</p>
+                    <input type="checkbox" class="checkboks" name="nyhetsbrev" value="send meg nyhetsbrev">
+                    <label class="label4">Ja takk! Send meg nyhetsbrev</label>
+                    <br>
+                    <input type="checkbox" class="checkboks" name="meldinger" value="send meg meldinger med nyheter">
+                    <label class="label4">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+                </section>
+            </section>
+
+    </main>
+   
+
+
+
+       <!-- FOOTER INNHOLD -->
+       
+    <!-- FOOTER INNHOLD -->
+    <footer>
+        <section id="footerstart">
+            <h2>Logo</h2>
+        <p>Morbi rhoncus turpis commodo massa lacinia, </p>
+
+        </section>
+        
+        <section id="kontakt">
+            <h3>KONTAKT</h3>
+            <i class="fa-solid fa-location-dot"></i> <label>Adresse: </label> <p>B R A Veien 4, 1757 Halden</p>
+            <br>
+            <i class="fa-solid fa-phone"></i> <label>Telefon: </label> <p>69 60 80 00</p>
+            <br>
+            <i class="fa-solid fa-envelope"></i> <label>E-post: </label> <p>halden@hiof.no</p>
+            <br>
+            <i class="fa-solid fa-clock"></i> <label>Åpningstider: </label> <p>Stenger 15.00</p>
+            <br>
+        </section>
+
+        <section id="snarveier">
+            <h3>SNARVEIER</h3>
+            <a href="">Produkter</a>
+            <a href="">Kategorier</a>
+            <a href="">Kontakt oss</a>
+            <a href="pdf/Mal – WCAG-sjekkliste for utfylling av tilgjengelighetserklæring for nettløsning 24.01.2024 (1).pdf">Tilgjengelighetserklæring</a>
+        </section>
+
+        <section id="some">
+            <h3>SOSIALE MEDIER</h3>
+            <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="linked in">
+                <i class="fa-brands fa-linkedin" style="color: #0a0a0a;"></i>
+            </a>
+
+            <a href="https://no.pinterest.com/" target="_blank" aria-label="pinterest">
+                <i class="fa-brands fa-pinterest" style="color: #0a0a0a;"></i>
+            </a>
+        </section>
+    </footer>
+</body>
+</html>

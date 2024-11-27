@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <form id="search">
+                <input type="search" id="sok" placeholder="Søk">
+                <button id="sokeknapp">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+             <!-- SIDENS NAVIGASJON -->
+                <article class="navi">
+                    <a href="index.html">Hjem</a>
+                    <a href="index.html#del2-1">Produkter</a>
+                    <a href="index.html"><h1 id="logo">Logo</h1></a>
+                    <a href="index.html#del3-1">Kategorier</a>
+                    <a href="#kontakt">Kontakt</a>
+              </article>
+
+             <!--BRUKER, LIKTE VARER OG HANDLEKURV -->
+                <article id="navicons">
+                    <a href><i class="fa-regular fa-user" style="color: black;"></i></a>
+                    <a href=""><i class="fa-regular fa-heart" style="color: black;"></i></a>
+                    <a href="checkout.html"><i class="fa-solid fa-cart-shopping" style="color: black;"></i></a>
+                </article>
+        </nav>
+    </header>
+
+
+    <!--MAIN -->
+
+    <main>
+
+          <!--Brødsmulesti -->
+        <article class="brodsmulesti1">
+            <ul class="brodsmulesti">
+                <li><a href="index.html">Hjem</a></li>
+               
+                <li><a href="index.html#del3-1">Kategori</a></li>
+         
+                <li><a href="product.html">Produkt</a></li>
+            </ul>
+        </article>
+
+
+        <!-- SEKSJON 1 produktbilder -->
+        <section id="flex-container-desktop">
+            <section id="del1-produkt">
+                <div id="grid-container-produkt">
+                    <section class="sma-bilder">
+                        <img src="img/produkt10.jpg" alt="lite produkt bilde">
+                        <img src="img/produkt10.jpg" alt="lite produkt bilde">
+                        <img src="img/produkt10.jpg" alt="lite produkt bilde">
+                    </section>
+                    <section class="stortbilde">
+                        <img src="img/produkt11.jpg" alt="stort produkt bilde">
+                    </section>
+                </div>
+            </section>
+
+            <!-- SEKSJON 2 produktinfo med størrelse, legg til handlekurv og likeknapp, samt details -->
+            <section id="del2-produkt">
+                <section class="produktinfo-produkt">
+                    <h1 id="h1produkt">Produktnavn</h1>
+                    <a href="#"><p id="merkenavn">MERKENAVN</p></a>
+                    <p>620 kr inkl mva.</p>
+                    <p>Farge: -</p>
+                </section>  
+
+
+                <!-- størrelse -->
+                <!-- HJELP AV CHAT GPT HUSK Å LEGGE INN PROMPT -->
+                <form action="#" method="GET">
+                    <label></label>
+                    <select id="storrelse1">
+                        <option value="" disabled selected>Velg størrelse</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>    
+                </form>
+                <button id="button-handlekurv">Legg til i handlekurv</button>
+                <button class="likeknapp"><i class="fa-regular fa-heart"></i></button>
+
+
+                <!-- Details -->
+                <hr>
+
+                 <!-- Details1 -->
+                <details>
+                    <summary>Materiale og vedlikehold</summary>
+                    <ul class="produktdetaljersummary">
+                        <li>Overmateriale</li>
+                        <li>Materiale emner</li>
+                        <li>Materiale:</li>
+                    </ul>
+                </details>
+                <hr>
+
+                 <!-- Details2 -->
+                <details>
+                    <summary>Produktdetaljer</summary>
+                    <p class="produktdetaljersummary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </details>
+                <hr>
+
+                 <!-- Details3 -->
+                <details>
+                    <summary>Størrelsetabell</summary>
+                    <table class="produktdetaljersummary">
+                        <thead>
+                            <tr>
+                                 <th>EU</th>
+                                <th>INT</th>
+                                <th>BRYSTVIDDE</th>
+                                <th>LIVVIDDE</th>
+                                <th>HOFTEMÅL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>32</td>
+                                <td>XXS</td>
+                                <td>76</td>
+                                <td>63</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>XS</td>
+                                <td>80</td>
+                                <td>66</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>S</td>
+                                <td>84</td>
+                                <td>69</td>
+                                <td>93</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>M</td>
+                                <td>88</td>
+                                <td>72</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>L</td>
+                                <td>92</td>
+                                <td>76</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                 <td>XL</td>
+                                <td>96</td>
+                                <td>80</td>
+                                <td>103</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>XXL</td>
+                                <td>96</td>
+                                <td>80</td>
+                                <td>106</td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>3XL</td>
+                                <td>104</td>
+                                <td>90</td>
+                                <td>109</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>4XL</td>
+                                <td>110</td>
+                                <td>96.5</td>
+                                <td>114</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>5XL</td>
+                                <td>116</td>
+                                <td>103</td>
+                                <td>119</td>
+                            </tr>
+                            <tr>
+                                <td>52</td>
+                                <td>6XL</td>
+                                <td>112</td>
+                                <td>109.5</td>
+                                <td>124</td>
+                            </tr>
+                            <tr>
+                                <td>54</td>
+                                <td>7XL</td>
+                                <td>128</td>
+                                <td>116</td>
+                                <td>130</td>
+                            </tr>
+                            <tr>
+                                <td>56</td>
+                                <td>8XL</td>
+                                <td>134</td>
+                                <td>122.5</td>
+                                <td>135</td>
+                            </tr>
+                            <tr>
+                                <td>58</td>
+                                <td>9XL</td>
+                                <td>140</td>
+                                <td>129</td>
+                                <td>142</td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>10XL</td>
+                                <td>146</td>
+                                <td>135.5</td>
+                                <td>148</td>
+                            </tr>    
+                            </tbody>
+                        </table>
+                    </details>
+
+                     <!-- Details 4 -->
+                    <hr>
+                    <details>
+                        <summary class="stjernerprodukt"> Anmeldelser    
+                            <br>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i> 
+                        </summary>    
+        
+                        <section class="andmeldelseprodukt">
+                            <h3>Kari Nordmann</h3>
+                            <p>2024-10-02</p>
+                    
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            <p>Nam venenatis, lectus in rutrum tincidunt, ipsum sapien convallis sapien.</p>
+                        </section>
+                    </details>  
+            </section>
+        </section>
+
+    
+    
+    
+     <!-- SEKSJON 3, lignende produkter, inneholder sections med articles -->
+        <section id="del3produkt-1">
+            <h3>Lignende produkter</h3>
+                <p>Se flere lignende produkter -></p>
+        </section>
+
+
+         <!-- Aside scroll -->
+        <aside id="scroll2">
+            <section id="del3produkt-2">
+                <article class="bildecontainer2">
+                    <a href="product.html" class="produktlink">
+                        <img src="img/produkt2.jpg" class="produktfoto2-1" alt="produktfoto">
+                    </a>
+                    <i class="fa-solid fa-heart produkt-side"></i>
+                    <article class="produktinfo-2">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                            
+                    <article class="stjernerprodukt">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                        <p>832 Reviews</p>
+                    </article>
+                </article>
+    
+                <article class="bildecontainer2">
+                    <a href="product.html" class="produktlink">
+                        <img src="img/produkt2.jpg" class="produktfoto2-1" alt="produktfoto">
+                    </a>
+                    <i class="fa-solid fa-heart produkt-side"></i>
+    
+                    <article class="produktinfo-2">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                            
+                    <article class="stjernerprodukt">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                        <p>832 Reviews</p>
+                    </article>
+                </article>
+    
+                <article class="bildecontainer2">
+                    <a href="product.html" class="produktlink">
+                        <img src="img/produkt2.jpg" class="produktfoto2-1" alt="produktfoto">
+                    </a>
+                    <i class="fa-solid fa-heart produkt-side"></i>
+    
+                    <article class="produktinfo-2">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                            
+                    <article class="stjernerprodukt">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                        <p>832 Reviews</p>
+                    </article>
+                </article>
+    
+                <article class="bildecontainer2">
+                    <a href="product.html" class="produktlink">
+                        <img src="img/produkt2.jpg" class="produktfoto2-1" alt="produktfoto">
+                    </a>
+                    <i class="fa-solid fa-heart produkt-side"></i>
+    
+                    <article class="produktinfo-2">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                            
+                    <article class="stjernerprodukt">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                        <p>832 Reviews</p>
+                    </article>
+                </article>
+    
+                <article class="bildecontainer2">
+                    <a href="product.html" class="produktlink">
+                        <img src="img/produkt2.jpg" class="produktfoto2-1" alt="produktfoto">
+                    </a>
+                    <i class="fa-solid fa-heart produkt-side"></i>
+    
+                    <article class="produktinfo-2">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                            
+                    <article class="stjernerprodukt">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                        <p>832 Reviews</p>
+                    </article>
+                </article>
+    
+                <article class="bildecontainer2">
+                    <a href="product.html" class="produktlink">
+                        <img src="img/produkt2.jpg" class="produktfoto2-1" alt="produktfoto">
+                    </a>
+                    <i class="fa-solid fa-heart produkt-side"></i>
+    
+                    <article class="produktinfo-2">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                            
+                    <article class="stjernerprodukt">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                        <p>832 Reviews</p>
+                    </article>
+                </article>      
+            </section>    
+        </aside> 
+    </main>
+
+    
+    <!-- FOOTER INNHOLD -->
+    <footer>
+        <section id="footerstart">
+            <h2>Logo</h2>
+        <p>Morbi rhoncus turpis commodo massa lacinia, </p>
+
+        </section>
+        
+        <section id="kontakt">
+            <h3>KONTAKT</h3>
+            <i class="fa-solid fa-location-dot"></i> <label>Adresse: </label> <p>B R A Veien 4, 1757 Halden</p>
+            <br>
+            <i class="fa-solid fa-phone"></i> <label>Telefon: </label> <p>69 60 80 00</p>
+            <br>
+            <i class="fa-solid fa-envelope"></i> <label>E-post: </label> <p>halden@hiof.no</p>
+            <br>
+            <i class="fa-solid fa-clock"></i> <label>Åpningstider: </label> <p>Stenger 15.00</p>
+            <br>
+        </section>
+
+        <section id="snarveier">
+            <h3>SNARVEIER</h3>
+            <a href="">Produkter</a>
+            <a href="">Kategorier</a>
+            <a href="">Kontakt oss</a>
+            <a href="pdf/Mal – WCAG-sjekkliste for utfylling av tilgjengelighetserklæring for nettløsning 24.01.2024 (1).pdf">Tilgjengelighetserklæring</a>
+        </section>
+
+        <section id="some">
+            <h3>SOSIALE MEDIER</h3>
+            <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-square-facebook" style="color: #0a0a0a;"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="linked in">
+                <i class="fa-brands fa-linkedin" style="color: #0a0a0a;"></i>
+            </a>
+
+            <a href="https://no.pinterest.com/" target="_blank" aria-label="pinterest">
+                <i class="fa-brands fa-pinterest" style="color: #0a0a0a;"></i>
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
