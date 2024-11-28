@@ -1,7 +1,12 @@
+
+/*     MOBILE FIRST    */
+
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    max-width: 1200px;
 }
+
+/*     NAV        */
 
 nav{
     display: flex;
@@ -18,7 +23,6 @@ nav{
 #search{
     display: flex;
     position: relative;
-    
 }
 
 #search input{
@@ -26,7 +30,6 @@ nav{
     border: solid 1px black;
     border-radius: 10px;
     width: 100%;
-     
 }
 
 #sokeknapp{
@@ -42,7 +45,7 @@ nav{
 a{
     text-decoration: none;
     color: black;
-    padding: 3px;
+    padding: 6px;
 }
 
 .produktlink{
@@ -55,6 +58,9 @@ a{
     padding: 10px;
 }
 
+
+
+/*Index html*/
 main{
     display: flex;
     flex-direction: column;
@@ -66,21 +72,10 @@ main{
     position: relative;
 }
 
-#hide1{
+#hide1, #hide2, #hide3, #hide4{
     display: none;
 }
 
-#hide2 {
-    display: none;
-}
-
-#hide3 {
-    display: none;
-}
-
-#hide4 {
-    display: none;
-}
 
 .slide{
     width: 90vw;
@@ -108,15 +103,12 @@ main{
 }
 
 .text-overlay h2{
-    font-size: 18px;
-    padding-top: 2%;
-    
+    font-size: 16px;
+    padding-top: 2%;  
 }
 
 .text-overlay p{
-    font-size: 10px;
-    
-    
+    font-size: 12px;
 }
 
 .text-overlay button{
@@ -132,19 +124,10 @@ main{
     border-radius: 10px;
     color: black;
     font-size: 12px;
-   
 }
 
 .text-overlay-1{
     display: none;
-}
-
-.produktfoto2{
-    height: 100%;
-    width: 90vw;
-    max-width: 350px;
-    border-radius: 5%;
-
 }
 
 #del2-1 button{
@@ -160,7 +143,6 @@ main{
     font-weight: 700;
     background-color: white;
     cursor: pointer;
- 
 }
 
 #del2-1 button:hover{
@@ -191,16 +173,17 @@ main{
 
 .produktfoto2{
     border-radius: 5%;
-    width: 80vw;
+    width: 70vw;
     height: 260px; 
 }
 
 .produktinfo{
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    width: 70vw;
     margin-bottom: 4%;
-    max-width: 350px;
+    margin-left: 2%;
+    font-size: 12px;
 }
 
 .produktinfo h3{
@@ -218,12 +201,13 @@ main{
     align-items: flex-start;
     gap: 5px;
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
+    margin-left: 2%;
 }
 
 .stjernerprodukt p{
     margin: 0;
-    margin-left: 2%;
+    margin-left: 3%;
     font-weight: 600;
     margin-bottom: 6%;
 }
@@ -315,6 +299,12 @@ main{
     
 }
 
+
+
+
+
+/*      FOOTER     */
+
 footer {
     border-top: 2px solid #ddd;
     padding-top: 20px;
@@ -355,7 +345,7 @@ footer {
 
 
 
-/* Produkt.html */
+/*     Produkt.html     */
 
 .fa-solid.fa-chevron-right{
     font-size: 9px;
@@ -617,7 +607,11 @@ details[open] summary::after{
     border-radius: 10px;
 }
 
-/* checkout */
+
+
+
+
+/*      checkout       */
 
 #del1-2-checkout{
     border: 1px solid lightgrey;
@@ -672,7 +666,6 @@ details[open] summary::after{
     gap: 15px;
     margin-right: 2%;
 }
-
 
 
 .formcheck .mengde{
@@ -833,11 +826,9 @@ select {
 }
 
 #del5-2{
-
     text-align: left;
     margin-left: 10%;
 }
-
 
 
 .bold{
@@ -856,6 +847,10 @@ select {
     font-size: 15px;
 }
 
+
+
+/*     TABLET BREAKPOINT    */
+
 @media only screen and (min-width: 768px) {
 
 
@@ -866,197 +861,196 @@ select {
         align-content: center;
     }
 
-     
+    /*     NAV TABLET    */
    nav {
-    flex-direction: row;
+        flex-direction: row;
    }
 
    .navi{
-    flex-direction: row;
-    font-size: 13px;
-    padding-left: 5%;
-    padding-right: 13%;
+        flex-direction: row;
+        font-size: 13px;
+        padding-left: 5%;
+        padding-right: 13%;
    }
 
    #logo{
-    font-size: 20px;
+        font-size: 20px;
    }
 
    .navi a{
-    padding: 4%;
+        padding: 4%;
    }
 
    .navi a:hover{
-    text-decoration: underline;
+        text-decoration: underline;
    }
 
    #navicons{
-    padding-left: 8%;
-    transition: transform 0.5 ease-out;
+        padding-left: 8%;
+        transition: transform 0.5 ease; 
    }
 
    #navicons a:hover{
-    transform: scale(1.4);
+       transform: scale(1.4);
    }
 
    #search{
-    margin-left: 5%;
+        margin-left: 5%;
    }
 
    #search input{
-    width: 20vw;
+        width: 20vw;
    }
 
    a {
-    padding: 0;
+        padding: 0;
    }
 
+
+    /*     INDEX TABLET    */
+
    .text-overlay{
-    display: none;
+        display: none;
    }
 
    .text-overlay-1{
-    display: block;
-    position: absolute;
-    translate: (-50,-50);
-    top: 15%;
-    left: 59%;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+        display: block;
+        position: absolute;
+        translate: (-50,-50);
+        top: 15%;
+        left: 59%;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
    }
 
    .text-overlay-1 button{
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 70%;
-    width: 75px;
-    text-align: center;
-    height: 35px;
-    border-radius: 40px;
-    background-color: rgb(44, 43, 43);
-    border: black;
-    color: white;
-    font-size: 11px;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 70%;
+        width: 75px;
+        text-align: center;
+        height: 35px;
+        border-radius: 40px;
+        background-color: rgb(44, 43, 43);
+        border: black;
+        color: white;
+        font-size: 11px;
    }
 
    .text-overlay-1 h2{
-    font-size: 16px;
-    margin: 0;
-    font-weight: 800;
-    width: 250px;
+        font-size: 16px;
+        margin: 0;
+        font-weight: 800;
+        width: 250px;
    }
 
    .text-overlay-1 p{
-    font-size: 12px;
-    width: 250px;
+        font-size: 12px;
+        width: 250px;
    }
 
    #hide1{
-    display: block;
-    width: 90%;
-    height: 30vw;
-    border-radius: 20px;
-
+        display: block;
+        width: 90%;
+        height: 30vw;
+        border-radius: 20px;
    }
 
    #hide2{
-    display: block;
+        display: block;
    }
 
    #hide3{
-    display: block;
-    width: 90%;
-    height: 30vw;
-    border-radius: 10px;
+        display: block;
+        width: 90%;
+        height: 30vw;
+        border-radius: 10px;
    }
 
    .produktfoto{
-    width: 90%;
-    height: 30vw;
-    border-radius: 20px;
+        width: 90%;
+        height: 30vw;
+        border-radius: 20px;
    }
 
-   #flip{
-    width: 90%;
+    #hide{
+        Width: 90%;
    }
 
    #hide4{
-    display: block;
-   }
+        display: block;
+    }    
 
    .slide-container{
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
-    margin-top: 5%;
-    height: 30vw;
-    scroll-behavior: smooth;
-   }
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+        margin-top: 5%;
+        height: 30vw;
+        scroll-behavior: smooth;
+    }
 
-   
 
    .slide{
-    width: 80vw;
-    overflow: hidden;
-    position: relative;
-}
+        width: 80vw;
+        overflow: hidden;
+        position: relative;
+    }
 
    .slide {
-    overflow: hidden;
-    position: relative;
-    width: fit-content;
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 30vw;
-    justify-content: center;
-    position: relative;
-   }
+        overflow: hidden;
+        position: relative;
+        width: fit-content;
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 30vw;
+        justify-content: center;
+        position: relative;
+    }
 
     .slide img {
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-   } 
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    } 
 
    #del2-1{
-    margin-left: 10%;
-    margin-right: 10%;
-   }
+        width: 60vw;
+    }
 
    #del2-1 h2{
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10%;
-    margin-bottom: 5%;
+        font-size: 25px;
+        font-weight: 800;
+        margin-top: 10%;
+        margin-bottom: 5%;
    }
 
    #del2-1 p{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5%;
-   }
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
 
    
    #del2-1 button{
-    width: 120px;
-    height: 35px;
-    text-align: center;
-    padding: 0;
-    margin: 2%;
-    margin-bottom: 10%;
-    border-radius: 20px;
-    border-width: 1px;
-    font-size: 10px;
-    font-weight: 700;
-    background-color: white;
-    cursor: pointer;
+        width: 120px;
+        height: 35px;
+        text-align: center;
+        padding: 0;
+        margin: 2%;
+        margin-bottom: 10%;
+        border-radius: 20px;
+        border-width: 1px;
+        font-size: 10px;
+        font-weight: 700;
+        background-color: white;
+        cursor: pointer;
     }
     
 
@@ -1102,22 +1096,19 @@ select {
     }
 
     #del3-1{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 60vw;
     }
 
 
     #del3-1 h2{
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 20%;
         font-weight: 800;
         margin-bottom: 5%;
     }
 
     #del3-1 p{
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 15px;
         margin-bottom: 10%;
     }
 
@@ -1188,26 +1179,28 @@ select {
     }
 
     #del4 h2{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 800;
     }
 
     .person1{
-        height: 120px;
-        width: 50%;
+        height: 10vw;
+        width: 10vw;
     }
 
     #scroll article {
         flex: 0 0 30%;
     }
 
+     /*     FOOTER TABLET    */
     footer{
         display: grid;
         grid-template-areas: "footerstart footerstart footerstart"
         "kontakt snarveier some";
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        padding: 20px;
+        grid-template-columns: 300px 200px 200px;
+        gap: 10px;
+    
+        
     }
 
     #footerstart{
@@ -1216,20 +1209,35 @@ select {
         padding: 10px
     }
 
+    #footerstart h2{
+        font-size: 30px;
+    }
+
     #kontakt {
         grid-area: kontakt;
         padding: 10px;
-        font-size: 10px
+        font-size: 14px;
     }
 
     #snarveier {
         grid-area: snarveier;
         padding: 10px;
+        font-size: 14px;
+    }
+
+    #snarveier a{
+        margin-bottom: 11%;
     }
 
     #some {
         grid-area: some;
-        padding: 10px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #some a{
+        font-size: 20px;
+        padding-right: 3px;
     }
 
     #del2-checkout {
@@ -1237,7 +1245,7 @@ select {
     }
 
    
-    /* product */
+     /*     PRODUCT TABLET    */
 
 
     .brodsmulesti1{
@@ -1264,7 +1272,7 @@ select {
 
     #flex-container-desktop{
         width: 90vw;
-        margin: 10%;
+        margin-bottom: 5%;
         margin-top: 0;
         display: flex;
         flex-wrap: wrap;
@@ -1283,9 +1291,13 @@ select {
         width: 95vw;
     }
 
+    summary::after{
+        padding-right: 10%;
+    }
 
 
-    /*checkout*/
+
+     /*     CHECKOUT TABLET    */
 
     #del1-checkout h1{
         font-size: 30px;
@@ -1400,10 +1412,6 @@ select {
         margin-bottom: 5%;
     }
 
-
-
-
-
     #del3-checkout h2{
         font-size: 30px;
         padding-bottom: 5%;
@@ -1416,6 +1424,7 @@ select {
     #del3-checkout h3{
         text-align: center;
         font-size: 20px;
+        margin-left: 0;
     }
 
     .buttonflex{
@@ -1424,13 +1433,18 @@ select {
         align-items: center;
         flex-direction: column;
     }
-
     
 
     #del4-checkout{
         margin-bottom: 5%;  
     }
 
+    .flexlabel{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+        
+    }
 
     #del4-checkout h2{
         font-size: 30px;
@@ -1441,6 +1455,7 @@ select {
     }
 
     #del4-checkout h3{
+        font-size: 20px;
         text-align: center;
         margin-left: 0;
     }
@@ -1461,6 +1476,7 @@ select {
     }
 
     #del5-2 h3{
+        font-size: 20px;
         text-align: center;
     }
 
@@ -1502,13 +1518,9 @@ select {
     }
 
     #CVC input{
-        width: 200px;
-        
+        width: 200px;  
     }
 
-    #del5-3{
-        
-    }
 
     .opplysninger4{
         align-items: start;
@@ -1524,9 +1536,20 @@ select {
 }
 
     @media only screen and (min-width: 950px) {
+
+
         
         .navi{
             font-size: 18px;
+            margin-left: 5%;
+        }
+
+        #logo{
+            font-size: 25px;
+        }
+
+        #navicons a{
+            font-size: 20px;
         }
 
         .text-overlay-1{
@@ -1555,84 +1578,167 @@ select {
             font-size: 16px;
             width: 300px;
            }
+
+           .slide-container{
+            width: fit-content;
+           }
+
+           .slide{
+            width: fit-content;
+           }
         
 
-        #del2-1{
-            width: 550px;
+            #del2-1{
+                width: 550px;
+            }
+
+            #del2-1 button{
+                width: 140px;
+                height: 40px;
+            }
+
+            #del2-2{
+                margin-left: 6%;
+                margin-right: 6%;
+            }
+
+
+            #del3-2{
+                width: 82vw;
+                display: grid;
+                grid-template-areas: 
+                "category1 category2 category3"
+                "category4 category4 category3"
+                "category4 category4 category5";
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto 2fr;
+                gap: 13px;
+                align-items: center;
+                padding-left: 4%;
+            }
+        
+            #category1 {
+                grid-area: category1;
+            }
+        
+            #category2 {
+                grid-area: category2;
+            }
+        
+            #category3 {
+                grid-area: category3;
+            }
+        
+            #category4 {
+                grid-area: category4;
+            }
+        
+            #category5 {
+                grid-area: category5;
+            }
+        
+        
+            .text-overlay img{
+                width: 100%;
+                height: auto;
+            }
+        
+            #category1 img, #category2 img{
+                height: 23vw;
+                width: 26vw;
+            
+            }
+        
+            #category4 img{
+                height: 45vw;
+                width: 55vw;
+            }
+
+
+            #category3 img {
+                width: 25vw;
+                height: 45vw;
+            }
+        
+            #category5 img{
+                width: 25vw;
+                height: 23vw;
+            }
+
+
+            #del1-2-checkout{
+                border: 1px solid lightgrey;
+                text-align: left;
+                width: 96vw;
+                margin-bottom: 5%;
+            }
+            
+
+            summary::after{
+                padding-right: 13%;
+            }
+
+
+            footer{
+                display: grid;
+                grid-template-areas: "footerstart footerstart footerstart"
+                "kontakt snarveier some";
+                grid-template-columns: 400px 200px 200px;
+                gap: 10px;
+            
+            }
+        
+            #footerstart{
+                grid-area: footerstart;
+                text-align: left;
+                padding: 10px
+            }
+        
+            #footerstart h2{
+                font-size: 30px;
+            }
+        
+            #kontakt {
+                grid-area: kontakt;
+                padding: 10px;
+                font-size: 17px;
+            }
+        
+            #snarveier {
+                grid-area: snarveier;
+                padding: 10px;
+                font-size: 17px;
+            }
+        
+            #snarveier a{
+                margin-bottom: 11%;
+            }
+        
+            #some {
+                grid-area: some;
+                padding: 12px;
+                font-size: 17px;
+            }
+        
+            #some a{
+                font-size: 25px;
+                padding-right: 10px;
+            }
+        
         }
 
-        #del2-1 button{
-            width: 140px;
-            height: 40px;
-        }
+    @media only screen and (min-width: 1150px){
 
+        .slide-container{
+            height: fit-content;
+            width: fit-content;
+        }
+        .slide{
+            width: 34vw;
+        }
 
         #del3-2{
-            width: 85vw;
-            display: grid;
-            grid-template-areas: 
-            "category1 category2 category3"
-            "category4 category4 category3"
-            "category4 category4 category5";
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto 2fr;
-            gap: 13px;
-            align-items: center;
-        }
-    
-        #category1 {
-            grid-area: category1;
-        }
-    
-        #category2 {
-            grid-area: category2;
-        }
-    
-        #category3 {
-            grid-area: category3;
-        }
-    
-        #category4 {
-            grid-area: category4;
-        }
-    
-        #category5 {
-            grid-area: category5;
-        }
-       
-    
-        .text-overlay img{
-            width: 100%;
-            height: auto;
-        }
-    
-        #category1 img, #category2 img{
-            height: 23vw;
-            width: 26vw;
-           
-        }
-    
-        #category4 img{
-            height: 45vw;
-            width: 55vw;
+            gap: 30px;
         }
 
-
-        #category3 img {
-            width: 25vw;
-            height: 45vw;
-        }
-    
-        #category5 img{
-            width: 25vw;
-            height: 23vw;
-        }
-
-       
     }
-
-
-
-    
- 
-    
